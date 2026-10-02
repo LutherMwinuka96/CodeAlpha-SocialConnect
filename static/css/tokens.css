@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light;
+  --primary: #5b58d6;
+  --primary-hover: #4b48c4;
+  --primary-soft: #eeedff;
+  --accent: #13745f;
+  --accent-soft: #e1f6ef;
+  --surface: #ffffff;
+  --surface-raised: #ffffff;
+  --surface-muted: #f1f3f8;
+  --canvas: #eef2ff;
+  --text: #20233a;
+  --text-soft: #444965;
+  --muted: #666c83;
+  --line: #e8eaf1;
+  --success: #18846b;
+  --success-soft: #e4f6ef;
+  --danger: #b84055;
+  --danger-soft: #fff0f2;
+  --warning: #b27424;
+  --shadow-sm: 0 2px 8px rgb(32 35 58 / 4%);
+  --shadow-md: 0 12px 36px rgb(32 35 58 / 8%);
+  --shadow-lg: 0 24px 70px rgb(32 35 58 / 16%);
+  --glass: rgb(255 255 255 / 82%);
+  --skeleton: #eceef4;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  --z-base: 0;
+  --z-sticky: 10;
+  --z-topbar: 20;
+  --z-popover: 30;
+  --z-toast: 50;
+  --z-dialog: 60;
+  --ease: cubic-bezier(.2,.75,.25,1);
+  --duration-fast: 150ms;
+  --duration: 220ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="system"] { color-scheme: dark; }
+}

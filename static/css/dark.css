@@ -1,0 +1,46 @@
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --primary: #a19cff;
+  --primary-hover: #b4b0ff;
+  --primary-soft: #302e53;
+  --accent: #64d5b7;
+  --accent-soft: #193d38;
+  --surface: #1c1e2b;
+  --surface-raised: #222433;
+  --surface-muted: #282a3a;
+  --canvas: #141621;
+  --text: #eff0fa;
+  --text-soft: #c5c8dc;
+  --muted: #989db8;
+  --line: #33364a;
+  --success: #64d5b7;
+  --success-soft: #193d38;
+  --danger: #ff8999;
+  --danger-soft: #42252f;
+  --warning: #e8b866;
+  --shadow-sm: 0 2px 8px rgb(0 0 0 / 15%);
+  --shadow-md: 0 12px 36px rgb(0 0 0 / 24%);
+  --shadow-lg: 0 24px 70px rgb(0 0 0 / 44%);
+  --glass: rgb(20 22 33 / 84%);
+  --skeleton: #303347;
+}
+:root[data-theme="dark"] .button-primary { color: #181729; }
+:root[data-theme="dark"] .button-primary:hover { color: #181729; }
+:root[data-theme="dark"] .avatar { background: linear-gradient(145deg, #49466e, #24584c); color: #eeedff; }
+:root[data-theme="dark"] .profile-summary-cover, :root[data-theme="dark"] .profile-cover, :root[data-theme="dark"] .settings-cover-preview { background: radial-gradient(ellipse at 84% 12%, #244b42 0, transparent 39%), linear-gradient(118deg, #353354 0, #282741 54%, #1c4038 100%); }
+:root[data-theme="dark"] .danger-zone { border-color: #593440; background: color-mix(in srgb, var(--danger-soft) 55%, var(--surface)); }
+:root[data-theme="dark"] .toast { background: var(--surface-raised); }
+:root[data-theme="dark"] .top-search kbd { background: var(--surface-raised); }
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="system"] {
+    color-scheme: dark;
+    --primary: #a19cff; --primary-hover: #b4b0ff; --primary-soft: #302e53;
+    --accent: #64d5b7; --accent-soft: #193d38; --surface: #1c1e2b; --surface-raised: #222433;
+    --surface-muted: #282a3a; --canvas: #141621; --text: #eff0fa; --text-soft: #c5c8dc;
+    --muted: #989db8; --line: #33364a; --success: #64d5b7; --success-soft: #193d38;
+    --danger: #ff8999; --danger-soft: #42252f; --warning: #e8b866;
+    --shadow-sm: 0 2px 8px rgb(0 0 0 / 15%); --shadow-md: 0 12px 36px rgb(0 0 0 / 24%);
+    --shadow-lg: 0 24px 70px rgb(0 0 0 / 44%); --glass: rgb(20 22 33 / 84%); --skeleton: #303347;
+  }
+}

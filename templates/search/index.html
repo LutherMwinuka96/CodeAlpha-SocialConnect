@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Explore · CodeAlpha Connect{% endblock %}
+{% block page_id %}search{% endblock %}
+{% block content %}
+<header class="page-heading"><div><p class="eyebrow">A LITTLE CURIOSITY</p><h1>Explore<span class="heading-period">.</span></h1><p class="page-subtitle">Find thoughtful people and conversations.</p></div></header>
+<label class="search-field card" for="search-query"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="m16 16 4.2 4.2"></path></svg><input id="search-query" type="search" placeholder="Try a name, a topic, or #something" autocomplete="off" data-search-input><kbd>⌘ K</kbd></label>
+<nav class="result-tabs" role="tablist" aria-label="Search result type"><button class="result-tab is-active" role="tab" aria-selected="true" data-result-tab="people">People <span data-result-count="people"></span></button><button class="result-tab" role="tab" aria-selected="false" data-result-tab="posts">Posts <span data-result-count="posts"></span></button><button class="result-tab" role="tab" aria-selected="false" data-result-tab="hashtags">Hashtags <span data-result-count="hashtags"></span></button></nav>
+<section class="search-results" data-search-results aria-live="polite"><div class="search-prompt card" data-search-prompt><div class="empty-icon" aria-hidden="true">⌕</div><h2>What are you curious about?</h2><p>Search for a person, a conversation, or a topic you love.</p></div><div data-results-list></div><div class="feed-empty card" data-search-empty hidden><div class="empty-icon" aria-hidden="true">◌</div><h2>No results yet</h2><p>Try another name or search for a different topic.</p></div></section>
+{% endblock %}

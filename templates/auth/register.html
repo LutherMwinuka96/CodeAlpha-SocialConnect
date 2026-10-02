@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Create account · CodeAlpha Connect{% endblock %}
+{% block page_id %}register{% endblock %}
+{% block protected %}false{% endblock %}
+{% block body_class %}auth-page{% endblock %}
+{% block content %}
+<main id="main-content" class="auth-layout"><a class="brand auth-brand" href="/"><span class="brand-mark" aria-hidden="true">c</span><span>connect<span class="brand-period">.</span></span></a><section class="auth-card card">
+  <p class="eyebrow">A PLACE TO BE YOURSELF</p><h1>Find your people<span class="heading-period">.</span></h1><p class="page-subtitle">Start with a name. The rest is yours to shape.</p>
+  <form class="stack-form" data-register-form novalidate>
+    <label for="register-name">Full name</label><input id="register-name" name="full_name" type="text" maxlength="120" autocomplete="name" required>
+    <label for="register-username">Username</label><input id="register-username" name="username" type="text" maxlength="150" autocomplete="username" required>
+    <label for="register-email">Email</label><input id="register-email" name="email" type="email" autocomplete="email" required>
+    <label for="register-password">Password</label><input id="register-password" name="password" type="password" minlength="10" autocomplete="new-password" required><span class="input-hint">Use at least 10 characters.</span>
+    <label for="register-confirm">Confirm password</label><input id="register-confirm" name="password_confirm" type="password" minlength="10" autocomplete="new-password" required>
+    <p class="form-error" data-form-error role="alert" hidden></p><button class="button button-primary button-wide" type="submit">Create your account <span aria-hidden="true">→</span></button>
+  </form><p class="auth-switch">Already have an account? <a href="/login/">Sign in</a></p>
+</section><p class="auth-note">By joining, you agree to our <a href="/terms/">Terms</a> and <a href="/privacy/">Privacy Policy</a>.</p></main>
+{% endblock %}

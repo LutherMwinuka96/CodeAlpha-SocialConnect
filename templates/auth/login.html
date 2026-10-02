@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Sign in · CodeAlpha Connect{% endblock %}
+{% block page_id %}login{% endblock %}
+{% block protected %}false{% endblock %}
+{% block body_class %}auth-page{% endblock %}
+{% block content %}
+<main id="main-content" class="auth-layout"><a class="brand auth-brand" href="/"><span class="brand-mark" aria-hidden="true">c</span><span>connect<span class="brand-period">.</span></span></a><section class="auth-card card">
+  <p class="eyebrow">WELCOME BACK</p><h1>Good to see you<span class="heading-period">.</span></h1><p class="page-subtitle">Sign in to catch up with your community.</p>
+  <form class="stack-form" data-login-form novalidate>
+    <label for="login-identifier">Username or email</label><input id="login-identifier" name="username" type="text" autocomplete="username" required>
+    <div class="label-row"><label for="login-password">Password</label><a href="/password-reset/">Forgot password?</a></div><input id="login-password" name="password" type="password" autocomplete="current-password" required>
+    <label class="check-row"><input type="checkbox" name="remember"><span>Keep me signed in</span></label>
+    <p class="success-note" data-registration-success role="status" hidden>Account created successfully. Sign in with your username or email and password.</p><p class="form-error" data-form-error role="alert" hidden></p><button class="button button-primary button-wide" type="submit">Sign in <span aria-hidden="true">→</span></button>
+  </form><p class="auth-switch">New to Connect? <a href="/register/">Create an account</a></p>
+</section><p class="auth-note">A calmer corner of the internet, made for you.</p></main>
+{% endblock %}

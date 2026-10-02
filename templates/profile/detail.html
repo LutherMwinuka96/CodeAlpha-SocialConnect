@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Profile · CodeAlpha Connect{% endblock %}
+{% block page_id %}profile{% endblock %}
+{% block content %}
+<section class="profile-page" data-profile-page>
+  <div class="profile-cover" data-profile-cover><span class="cover-accent" aria-hidden="true"></span></div>
+  <div class="profile-main card">
+    <div class="profile-main-top"><div class="avatar avatar-profile" data-profile-avatar><span data-profile-initials>CA</span></div><div class="profile-actions"><button class="button button-secondary" type="button" data-edit-profile hidden>Edit profile</button><button class="button button-primary" type="button" data-follow-button hidden>Follow</button><button class="icon-button" type="button" aria-label="More profile actions" data-profile-more hidden>···</button></div></div>
+    <div class="profile-identity"><p class="eyebrow">CONNECT MEMBER</p><h1 data-profile-name>Loading profile…</h1><p class="profile-handle" data-profile-handle>@username</p><p class="profile-bio" data-profile-bio></p><div class="profile-meta"><span data-profile-location hidden></span><a data-profile-website hidden rel="me noopener" target="_blank"></a><span data-follows-you hidden class="follows-you-badge">Follows you</span></div>
+      <div class="profile-counts"><a href="#followers" data-open-followers><strong data-profile-followers>—</strong><span>followers</span></a><a href="#following" data-open-following><strong data-profile-following>—</strong><span>following</span></a><a href="#posts"><strong data-profile-posts>—</strong><span>posts</span></a></div>
+    </div>
+  </div>
+  <nav class="profile-tabs" role="tablist" aria-label="Profile posts">
+    <button class="profile-tab is-active" role="tab" aria-selected="true" data-profile-tab="posts">Posts</button><button class="profile-tab" role="tab" aria-selected="false" data-profile-tab="replies">Replies</button><button class="profile-tab" role="tab" aria-selected="false" data-profile-tab="likes">Likes</button><button class="profile-tab" role="tab" aria-selected="false" data-profile-tab="media">Media</button>
+  </nav>
+  <div class="feed-list" data-profile-posts aria-live="polite" aria-busy="true"><article class="post-skeleton card"><div class="skeleton-header"><span class="skeleton-avatar"></span><span class="skeleton-line"></span></div><span class="skeleton-line"></span></article></div>
+  <div class="feed-empty card" data-profile-empty hidden><div class="empty-icon" aria-hidden="true">✳</div><h2>Nothing here just yet</h2><p>When there’s something to share, it’ll find its way here.</p></div>
+</section>
+{% endblock %}

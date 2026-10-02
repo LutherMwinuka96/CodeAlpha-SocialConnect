@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Notifications · CodeAlpha Connect{% endblock %}
+{% block page_id %}notifications{% endblock %}
+{% block content %}
+<header class="page-heading"><div><p class="eyebrow">YOUR COMMUNITY, CHECKING IN</p><h1>Notifications<span class="heading-period">.</span></h1><p class="page-subtitle">A little signal from the people around you.</p></div><button class="button button-secondary button-small" type="button" data-mark-all-read>Mark all read</button></header>
+<nav class="notification-filter" role="tablist" aria-label="Filter notifications"><button class="is-active" role="tab" aria-selected="true" data-notification-filter="all">All</button><button role="tab" aria-selected="false" data-notification-filter="unread">Unread</button></nav>
+<section class="notification-list card" data-notification-list aria-live="polite" aria-busy="true"><div class="notification-skeleton"><span class="skeleton-avatar"></span><div><span class="skeleton-line"></span><span class="skeleton-line short"></span></div></div><div class="notification-skeleton"><span class="skeleton-avatar"></span><div><span class="skeleton-line"></span><span class="skeleton-line short"></span></div></div></section>
+<div class="feed-empty card" data-notifications-empty hidden><div class="empty-icon" aria-hidden="true">♧</div><h2>You’re all caught up</h2><p>When someone follows, mentions, or replies to you, you’ll see it here.</p></div>
+{% endblock %}

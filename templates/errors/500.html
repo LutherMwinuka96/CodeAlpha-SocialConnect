@@ -1,0 +1,4 @@
+{% extends "base.html" %}
+{% block protected %}false{% endblock %}
+{% block title %}Something went wrong · CodeAlpha Connect{% endblock %}
+{% block content %}<section class="error-page card"><div class="error-number">500</div><p class="eyebrow">A SMALL PAUSE</p><h1>We hit a snag<span class="heading-period">.</span></h1><p>Your content is safe. Try again in a moment.</p><button class="button button-primary" type="button" onclick="window.location.reload()">Try again</button></section>{% endblock %}
